@@ -1,5 +1,65 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9fafb;
+}
+
+/* SIDEBAR */
+
+.side {
+  position: relative;
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: clamp(300px, 20vw, 500px);
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: clamp(100px, 20vh, 30vh);
+}
+
+.logo img {
+  width: clamp(100px, 5vw, 200px);
+  height: auto;
+}
+
+.logo-text {
+  font-size: 4rem;
+}
+
+.credit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-credit {
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1rem;
+}
+
+.photo-credit a {
+  color: #fff;
+}
+
+/* FORM */
+
+.form-container {
+    flex: 1;
 }
